@@ -1,0 +1,114 @@
+.win-or-lose-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff33;
+  width: 85%;
+  border: 3px solid #ffffff30;
+  border-radius: 24px;
+  margin: auto;
+  padding: 16px;
+}
+
+.details-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  order: 1;
+}
+
+.game-status {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.current-score-label {
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.current-score-value {
+  text-align: center;
+  color: #6a59ff;
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.play-again-button {
+  color: #3d3d3d;
+  background-color: #ffce27;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  margin: 16px;
+  padding: 16px 24px;
+  cursor: pointer;
+  outline: none;
+}
+
+.image-section {
+  display: flex;
+  justify-content: center;
+  order: 0;
+}
+
+.win-or-lose-image {
+  width: 150px;
+  height: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  .win-or-lose-card {
+    width: 80%;
+    padding: 32px;
+  }
+
+  .current-score-value {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .win-or-lose-card {
+    flex-direction: row;
+    width: 70%;
+  }
+
+  .details-section {
+    order: 0;
+  }
+
+  .game-status {
+    font-size: 64px;
+  }
+
+  .current-score-label {
+    font-size: 36px;
+  }
+
+  .image-section {
+    order: 1;
+  }
+
+  .win-or-lose-image {
+    width: 350px;
+    height: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .win-or-lose-card {
+    width: 60%;
+  }
+}
